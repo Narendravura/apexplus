@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+    
+}
+.form{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 5 px;
+    margin: 10px;
+}
+input{
+    padding: 5px;
+    margin: 10px;
+}
+
+select{
+    padding: 5px 20px;
+    margin: 10px;
+}
