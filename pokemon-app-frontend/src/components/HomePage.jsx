@@ -13,7 +13,7 @@ function HomePage() {
 
   useEffect(() => {
     // Fetch all users
-    fetch("http://localhost:5000/viewusers")
+    fetch("https://apexplus.vercel.app/viewusers")
       .then((response) => response.json())
       .then((data) => {
         const uniqueUsers = Array.from(
@@ -27,7 +27,7 @@ function HomePage() {
   useEffect(() => {
     if (selectedUser) {
       // Fetch Pokémon for the selected user
-      fetch(`http://localhost:5000/viewpokemon/${selectedUser}`)
+      fetch(`https://apexplus.vercel.app/viewpokemon/${selectedUser}`)
         .then((response) => response.json())
         .then((data) => {
           setPokemons(data);

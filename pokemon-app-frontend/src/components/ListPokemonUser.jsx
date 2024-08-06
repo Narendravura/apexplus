@@ -12,7 +12,7 @@ function ListPokemonUser() {
   useEffect(() => {
     // Fetch the list of Pokémon from the backend
     axios
-      .get("http://localhost:5000/viewallusers") // Ensure this matches your backend route
+      .get("https://apexplus.vercel.app/viewallusers") // Ensure this matches your backend route
       .then((response) => {
         console.log("Fetched Pokémon data:", response.data); // Log the response to see the structure
         setUsersWithPokemons(response.data);
@@ -30,7 +30,7 @@ function ListPokemonUser() {
 
   const handleDelete = (pokemonId) => {
     axios
-      .delete(`http://localhost:5000/deletepokemon/${pokemonId}`)
+      .delete(`https://apexplus.vercel.app/deletepokemon/${pokemonId}`)
       .then(() => {
         setUsersWithPokemons(
           usersWithPokemons.map((userWithPokemons) => ({
@@ -46,7 +46,7 @@ function ListPokemonUser() {
 
   const handleDeleteAll = () => {
     axios
-      .delete("http://localhost:5000/deleteallusers")
+      .delete("https://apexplus.vercel.app/deleteallusers")
       .then(() => {
         setUsersWithPokemons([]);
       })

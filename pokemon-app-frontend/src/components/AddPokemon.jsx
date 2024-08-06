@@ -15,7 +15,7 @@ const AddPokemon = () => {
 
   useEffect(() => {
     // Fetch Pokémon owners list
-    axios.get('http://localhost:5000/viewusers') // Ensure this endpoint is correct
+    axios.get('https://apexplus.vercel.app/viewusers') // Ensure this endpoint is correct
       .then(response => {
         // Assuming the response data is an array of users
         setPokemonOwners(response.data.map(user => ({
@@ -43,7 +43,7 @@ const AddPokemon = () => {
     };
 
     // Create new Pokémon
-    axios.post('http://localhost:5000/addpokemon', newPokemon)
+    axios.post('https://apexplus.vercel.app/addpokemon', newPokemon)
       .then(response => {
         console.log('Pokémon added successfully:', response.data);
         navigate('/listuser'); // Redirect to Pokémon list page

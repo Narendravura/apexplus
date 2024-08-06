@@ -38,7 +38,7 @@ function AddPokemonUser() {
     };
 
     axios
-      .post("http://localhost:5000/addpokemon", newPokemon)
+      .post("https://apexplus.vercel.app/addpokemon", newPokemon)
       .then((response) => {
         console.log("Pokemon added successfully:", response.data);
         navigate(`/listuser`);

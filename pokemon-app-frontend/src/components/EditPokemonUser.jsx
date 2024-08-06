@@ -30,7 +30,7 @@ function EditPokemonUser() {
   useEffect(() => {
     // Fetch the existing Pokémon data
     axios
-      .get(`http://localhost:5000/viewpokemondetails/${pokemonId}`)
+      .get(`https://apexplus.vercel.app/viewpokemondetails/${pokemonId}`)
       .then((response) => {
         console.log("Fetched Pokémon data:", response.data); // Debug line
         const {
@@ -68,7 +68,7 @@ function EditPokemonUser() {
     };
 
     axios
-      .patch(`http://localhost:5000/updatepokemon/${pokemonId}`, updatedPokemon)
+      .patch(`https://apexplus.vercel.app/updatepokemon/${pokemonId}`, updatedPokemon)
       .then((response) => {
         console.log("Pokemon updated successfully:", response.data);
         navigate(`/listuser`); // Redirect to the user's Pokémon list
