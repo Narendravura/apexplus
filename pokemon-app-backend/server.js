@@ -6,7 +6,7 @@ const cors = require('cors');
 const app = express();
 app.use(bodyParser.json());
 app.use(cors({
-  origin:["https://apexplus-assignmnt.vercel.app"],
+  origin:["https://apexplus-frontend.vercel.app"],
   methods:["POST","GET","PUT","PATCH","DELETE"],
   credentials:true
 }));
