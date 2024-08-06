@@ -11,8 +11,7 @@ VERCEL LINK - https://apexplus-frontend.vercel.app/
 - [Usage](#usage)
 - [Components](#components)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
@@ -75,18 +74,4 @@ Form to add a new Pokemon to the selected owner.
 - **Database**: MongoDB (or any other preferred database)
 - **HTTP Client**: Axios
 
-## Contributing
 
-1. Fork the repository.
-2. Create your feature branch (`git checkout -b feature/YourFeature`).
-3. Commit your changes (`git commit -am 'Add some feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Create a new Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to customize this README file according to your project's specific details and requirements.
